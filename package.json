@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-schema",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,10 +24,11 @@
   "homepage": "https://github.com/gibrancordoba/dynamodb-schema",
   "bugs": {
     "url": "https://github.com/gibrancordoba/dynamodb-schema/issues",
-    "email" : "o.cordobam@hotmail.com"
+    "email": "o.cordobam@hotmail.com"
   },
   "repository": {
-    "type": "git", "url": "https://github.com/gibrancordoba/dynamodb-schema.git"
+    "type": "git",
+    "url": "https://github.com/gibrancordoba/dynamodb-schema.git"
   },
   "author": "Oscar Gibrán Córdoba Méndez <o.cordobam@hotmail.com>",
   "license": "Apache License 2.0",
