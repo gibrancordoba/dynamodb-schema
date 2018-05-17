@@ -6,3 +6,9 @@ node_js:
 script:
   - "npm run build"
 
+deploy:
+  api_key: $NPM_TOKEN
+  email: o.cordobam@hotmail.com
+  provider: npm
+  on:
+    tags: true
