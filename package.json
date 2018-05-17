@@ -14,7 +14,7 @@
     "schema"
   ],
   "author": "Oscar Gibrán Córdoba Méndez <o.cordobam@hotmail.com>",
-  "license": "ISC",
+  "license": "Apache License 2.0",
   "devDependencies": {
     "aws-sdk": "^2.241.1",
     "ts-loader": "^4.3.0",
