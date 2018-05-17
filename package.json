@@ -11,8 +11,24 @@
   },
   "keywords": [
     "dynamodb",
+    "node",
+    "nodejs",
+    "typescript",
+    "aws",
+    "amazon",
+    "dynamo",
+    "dynamo database",
+    "NoSQL",
     "schema"
   ],
+  "homepage": "https://github.com/gibrancordoba/dynamodb-schema",
+  "bugs": {
+    "url": "https://github.com/gibrancordoba/dynamodb-schema/issues",
+    "email" : "o.cordobam@hotmail.com"
+  },
+  "repository": {
+    "type": "git", "url": "https://github.com/gibrancordoba/dynamodb-schema.git"
+  },
   "author": "Oscar Gibrán Córdoba Méndez <o.cordobam@hotmail.com>",
   "license": "Apache License 2.0",
   "devDependencies": {
