@@ -1,0 +1,25 @@
+{
+  "name": "dynamodb-schema",
+  "version": "0.0.12",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx webpack --env=developmnet",
+    "watch": "npx webpack --env=developmnet -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dynamodb",
+    "schema"
+  ],
+  "author": "Oscar Gibrán Córdoba Méndez <o.cordobam@hotmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.241.1",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}

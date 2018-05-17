@@ -1,0 +1,18 @@
+import * as AWS from 'aws-sdk';
+
+export default class DynamoDBConnector{
+
+    private conn!: AWS.DynamoDB;
+
+    constructor(conn?: AWS.DynamoDB){ 
+        if (conn) {
+            this.conn = conn;
+        }
+    }
+
+    connect(){
+        return new AWS.DynamoDB({ apiVersion: '2012-08-10' });
+        
+    };
+
+}
