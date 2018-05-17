@@ -1,5 +1,7 @@
 # @gibrancordoba/dynamo-schema
 
+[![Build Status](https://travis-ci.com/gibrancordoba/dynamodb-schema.svg?branch=master)](https://travis-ci.com/gibrancordoba/dynamodb-schema)
+
 A Typescript Node.js package that create schemas on dynamoDb.
 
 ## Usage
