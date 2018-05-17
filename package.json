@@ -7,6 +7,7 @@
   "scripts": {
     "build": "npx webpack --env=developmnet",
     "watch": "npx webpack --env=developmnet -w",
+    "docs": "npm typedoc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
