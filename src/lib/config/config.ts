@@ -29,7 +29,7 @@ class Configurator {
     };
 
     static setConfig(configurator: Configuration): void {
-        Configurator.config = Object.assign({}, Configurator.config, configurator);
+        Configurator.config = (<any>Object).assign({}, Configurator.config, configurator);
     };
 
 

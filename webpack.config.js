@@ -1,4 +1,5 @@
 const path = require('path');
+const TypedocWebpackPlugin = require('typedoc-webpack-plugin');
 
 const config = {
     mode:'none',
@@ -19,14 +20,28 @@ const config = {
         filename: 'index.js',
     },
     target: 'node',
-     module: {
-         rules: [
-             {
-                 test: /\.ts$/,
-                 use: 'ts-loader'
-             }
-         ]
-     }
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'ts-loader'
+            }
+        ]
+    },
+    plugins: [
+        new TypedocWebpackPlugin({
+            out: '../docs',
+            module: 'commonjs',
+            target: 'es2015',
+            exclude: [
+                '**/node_modules/**/*.*',
+                '**/dist/**/*.*',
+                '**/test/**/*.*',
+            ],
+            experimentalDecorators: true,
+            excludeExternals: true
+        }, './src')
+    ]
 };
 
 

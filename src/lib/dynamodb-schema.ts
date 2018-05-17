@@ -12,11 +12,11 @@ export class SchemaBuilder {
         const newC = {
             schema: schema
         }
-        Config.setConfig(Object.assign({}, Config.getConfig().schema, newC));
+        Config.setConfig((<any>Object).assign({}, Config.getConfig().schema, newC));
     }
 
     public config(config: Config): void{
-        Config.setConfig(Object.assign({}, Config.getConfig(), config));
+        Config.setConfig((<any>Object).assign({}, Config.getConfig(), config));
     }
 
     constructor(){
