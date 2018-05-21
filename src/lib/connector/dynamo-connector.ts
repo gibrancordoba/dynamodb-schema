@@ -1,5 +1,9 @@
 import * as AWS from 'aws-sdk';
 
+AWS.config.update({
+    region: "us-east-1"
+});
+
 export default class DynamoDBConnector{
 
     private conn!: AWS.DynamoDB;

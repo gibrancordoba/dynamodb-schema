@@ -10,15 +10,19 @@ describe('ParseSchemaBuilder', () => {
             name: 'table1',
             attributtes: [
                 { name: 'user',  type: 'String' },
-                { name: 'name',  type: 'String' },
-                { name: 'name2', type: 'Boolean' },
-                { name: 'name3', type: 'Map' },
-                { name: 'name4', type: 'Number' }
+                { name: 'name',  type: 'String' }
+               // { name: 'name2', type: 'Boolean' },
+               // { name: 'name3', type: 'Map' },
+               // { name: 'name4', type: 'Number' }
             ],
             keys: [
                 { name: 'user',  type: 'HASH' },
                 { name: 'name', type: 'RANGE' }
-            ]
+            ],
+            Throughput: {
+                read: 5,
+                write: 5
+            }
         }
     ]);
     before(() => {

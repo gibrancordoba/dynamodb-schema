@@ -1,4 +1,4 @@
-import Schema, { Atribute, KeySchema } from "./Schema";
+import Schema, { Atribute, KeySchema, Throughput } from "./Schema";
 
 enum TABLE_BUILDER {
     TableName =  'TableName',
@@ -11,7 +11,8 @@ enum TABLE_ATTRIBUTE_BUILDER {
 }
 
 export default class ParserSchema {
-    
+    private static defaultReadThrougput = 5
+    private static defaultWriteThrougput = 5
     static parse(schema: Schema[] | undefined): any {
         if (schema == undefined) {
             return null;
@@ -27,7 +28,8 @@ export default class ParserSchema {
             tables.push({
                 AttributeDefinitions: this.getAtrribute(it.attributtes),
                 KeySchema: this.getKeySchema(it.keys),
-                TableName: it.name
+                TableName: it.name, 
+                ProvisionedThroughput: this.getThroughput(it.throughput)
             });
         });
         return tables;
@@ -45,6 +47,13 @@ export default class ParserSchema {
         });
         //console.log('getKeySchema [ ',  _atributes);
         return _atributes;
+    }
+    private static getThroughput(throughput: Throughput | undefined): any {
+       return {
+        ReadCapacityUnits: throughput ? throughput.read : ParserSchema.defaultReadThrougput,
+        WriteCapacityUnits: throughput ? throughput.write : ParserSchema.defaultWriteThrougput
+
+       }
     }
 
 
@@ -80,7 +89,7 @@ export default class ParserSchema {
                 attribute = 'S';
             break;
             case 'boolean': 
-                attribute = 'BOOL';
+                attribute = 'S';
             break;
             case 'number': 
                 attribute = 'N';
