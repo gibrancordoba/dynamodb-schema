@@ -32,6 +32,11 @@
     "url": "https://github.com/gibrancordoba/dynamodb-schema.git"
   },
   "author": "Oscar Gibrán Córdoba Méndez <o.cordobam@hotmail.com>",
+  "contributors": [{
+    "name": "Fidel Saldiva",
+    "email": "fsaldivars@gamil.com",
+    "url": "https://github.com/fsaldivars/"
+  }],
   "license": "Apache License 2.0",
   "devDependencies": {
     "@types/chai": "^4.0.4",
