@@ -16,6 +16,7 @@ export default class TableBuilder {
     }
 
     create(typeCreration: CreateType, tableSchema: AWS.DynamoDB.CreateTableInput): Promise<any> {
+        console.log('create tableSchema', tableSchema );
         return new Promise((resolve, reject) => {
             console.log("Creando tabla " + tableSchema.TableName);
             if (typeCreration === CreateType.OVERRIDE) {

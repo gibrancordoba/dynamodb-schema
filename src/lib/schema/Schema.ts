@@ -2,6 +2,8 @@ import Config from "../config/config";
 
 
 export interface Atribute {
+    name: String,
+    type: String
 
 }
 
