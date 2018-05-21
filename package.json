@@ -1,6 +1,6 @@
 {
   "name": "dynamodb-schema",
-  "version": "0.0.20",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,11 +32,13 @@
     "url": "https://github.com/gibrancordoba/dynamodb-schema.git"
   },
   "author": "Oscar Gibrán Córdoba Méndez <o.cordobam@hotmail.com>",
-  "contributors": [{
-    "name": "Fidel Saldiva",
-    "email": "fsaldivars@gamil.com",
-    "url": "https://github.com/fsaldivars/"
-  }],
+  "contributors": [
+    {
+      "name": "Fidel Saldiva",
+      "email": "fsaldivars@gamil.com",
+      "url": "https://github.com/fsaldivars/"
+    }
+  ],
   "license": "Apache License 2.0",
   "devDependencies": {
     "@types/chai": "^4.0.4",
