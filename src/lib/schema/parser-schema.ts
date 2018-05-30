@@ -19,12 +19,6 @@ export default class ParserSchema {
         }
         let tables:  Array<Object> = new Array<Map<string, any>>();
         schema.forEach(it => {
-
-
-            // let params:  Map<string, any> = new Map<string, any>();
-            // params.set(TABLE_BUILDER.TableName, it.name);
-            // params.set(TABLE_BUILDER.AttributeDefinitions, this.getAtrribute(it.attributtes));
-            // params.set(TABLE_BUILDER.KeySchema, this.getKeySchema(it.keys));
             tables.push({
                 AttributeDefinitions: this.getAtrribute(it.attributtes),
                 KeySchema: this.getKeySchema(it.keys),
@@ -56,7 +50,6 @@ export default class ParserSchema {
        }
     }
 
-
     private static getAtrribute(atributes: Atribute[]): Array<any> {
         const _atributes: Array<any> = new Array<any>();
         atributes.forEach(it => {
@@ -82,6 +75,7 @@ export default class ParserSchema {
         }
         return attribute;
     }
+
     private static getValueOfAtribute(type: String): String {
         let attribute = 'S';
         switch(type.toLowerCase().trim()) {

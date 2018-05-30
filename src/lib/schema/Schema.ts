@@ -1,5 +1,5 @@
 import Config from "../config/config";
-
+import {  } from "../table/table-builder";
 
 export interface Atribute {
     name: String,
