@@ -106,20 +106,12 @@ you can use this property to assign schema information to the dynamodbSchema obj
 | Number      | Number       |
 | Array       | Map          |
 
-## Custom configuration options
-
-There are some custom params to use in order to create schema
-
-### preffix
-
-### subffix
-
-### override
 
 ## Links
+
 
 ## License
 
 [Apache 2.0](https://github.com/gibrancordoba/dynamodb-schema/blob/master/license.md)
 
-[![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](http://ForTheBadge.com) [![ForTheBadge makes-people-smile](http://ForTheBadge.com/images/badges/makes-people-smile.svg)](http://ForTheBadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
